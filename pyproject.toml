@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "core-site-checkup"
+version = "0.1.0"
+description = ""
+authors = ["Christopher Alexander King-Parra <ckingparra@hivelocity.net>"]
+readme = "readme.rst"
+packages = [{include = "core-site-checkup"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.1"
+fire = "^0.4.0"
+
+
+[tool.poetry.group.dev.dependencies]
+bpython = "^0.23"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
